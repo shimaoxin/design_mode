@@ -1,7 +1,8 @@
 package decorator2;
 
 /**
- * Description
+ * 装饰者模式
+ * 装修
  *
  * @author yxy
  * @date 2020/08/2020/8/19
