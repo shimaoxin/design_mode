@@ -10,8 +10,8 @@ package builder;
 public class Main {
     public static void main(String[] args) {
         KFCPackageBuilder builder = new KFCPackageBuilder();
-        Package pa =  builder.common(); //普通套餐
-//        Package pa =  builder.familyMeals(); //全家桶
+//        Package pa =  builder.common(); //普通套餐
+        Package pa =  builder.familyMeals(); //全家桶
         System.out.println("套餐名称：" + pa.getName());
         System.out.println("套餐内容：" + pa.getItemNames());
         System.out.println("套餐价格：" + pa.price());

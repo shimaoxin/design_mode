@@ -9,8 +9,7 @@ package builder;
 public class KFCPackageBuilder {
 
     public KFCPackage common() {
-        KFCPackage kfcPackage = new KFCPackage();
-        kfcPackage.setName("普通套餐");
+        KFCPackage kfcPackage = new KFCPackage("普通套餐", 1);
         kfcPackage.addItem(new Coke());
         kfcPackage.addItem(new Hamburger());
         kfcPackage.addItem(new Chips());
@@ -18,8 +17,7 @@ public class KFCPackageBuilder {
     }
 
     public KFCPackage familyMeals() {
-        KFCPackage kfcPackage = new KFCPackage();
-        kfcPackage.setName("全家桶");
+        KFCPackage kfcPackage = new KFCPackage("全家桶", 0.9);
         kfcPackage.addItem(new Coke());
         kfcPackage.addItem(new Coke());
         kfcPackage.addItem(new Hamburger());

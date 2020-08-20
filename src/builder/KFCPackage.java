@@ -16,6 +16,13 @@ public class KFCPackage implements Package{
 
     private String name;
 
+    private double sale;
+
+    public KFCPackage(String name, double sale) {
+        this.name = name;
+        this.sale = sale;
+    }
+
     @Override
     public String getName() {
         return name;
@@ -42,11 +49,7 @@ public class KFCPackage implements Package{
         for (Item item : items) {
             price += item.getPrice();
         }
-        return price;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        return  (int)(price * sale);
     }
 
     public void addItem(Item item) {
